@@ -1,0 +1,28 @@
+<!--
+ Copyright (c) 2014, 2019, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-padding">
+  <h1>Dashboard Content Area</h1>
+                    
+    <div id="containerDiv">
+      <oj-data-grid id="datagrid" style="width:100%;max-width:800px;height:152px" aria-label="Data Grid Cell Based Grid Demo"
+    data="[[dataSource]]" header.column.renderer="[[KnockoutTemplateUtils.getRenderer('header_template')]]">
+</oj-data-grid>
+<script type="text/html" id="header_template">
+    <oj-bind-if test="[[$context.key== 0]]">
+        <span><oj-bind-text value="Column 1"></oj-bind-text></span> 
+    </oj-bind-if>
+    <oj-bind-if test="[[$context.key== 1]]">
+        <span><oj-bind-text value="Column 2"></oj-bind-text></span> 
+    </oj-bind-if>
+    <oj-bind-if test="[[$context.key== 2]]">
+        <span><oj-bind-text value="Column 3"></oj-bind-text></span> 
+    </oj-bind-if>
+</script>
+    </div>
+    
+    
+    
+  </div>
+</div>
